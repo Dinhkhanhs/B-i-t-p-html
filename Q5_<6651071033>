@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+
+<form id="form1">
+
+<table border="1" cellpadding="4" cellspacing="0"
+       align="center">
+
+    <tr>
+        <td>Mã người dùng:</td>
+        <td>
+            <input type="text" id="maNguoiDung" value="ptnhung">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Mật khẩu:</td>
+        <td>
+            <input type="password" id="matKhau" value="123456789">
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td align="center">
+            <input type="button"
+                   id="dongY"
+                   value="Đồng ý"
+                   onclick="hienThi()">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <div id="nhan"></div>
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+<script>
+function hienThi() {
+    document.getElementById("nhan").innerText =
+        document.getElementById("maNguoiDung").value;
+}
+</script>
+
+</body>
+</html> 
