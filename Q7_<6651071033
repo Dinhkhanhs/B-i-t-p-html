@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng ký du lịch</title>
+</head>
+
+<body>
+
+<form id="form1">
+
+<table border="1" cellpadding="4" cellspacing="0"
+       align="center">
+
+    <tr>
+        <td>Họ và tên</td>
+        <td>
+            <input type="text" id="hoTen" size="40">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Địa chỉ</td>
+        <td>
+            <input type="text" id="diaChi" size="30">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Điện thoại</td>
+        <td>
+            <input type="text" id="dienThoai" size="20">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Khách Việt Nam</td>
+        <td>
+            <input type="checkbox" id="khachVietNam">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Chọn tour</td>
+        <td>
+            <select id="chonTour">
+                <optgroup label="Miền Bắc">
+                    <option>Hà Nội - Hạ Long - Sapa</option>
+                    <option>Hà Nội - Chùa Hương - Ninh Bình</option>
+                    <option>Hà Nội - Cát Bà - Tuần Châu</option>
+                </optgroup>
+
+                <optgroup label="Miền Trung">
+                    <option>Huế - Bạch Mã - Đà Nẵng</option>
+                    <option>Nha Trang - Đà Lạt</option>
+                    <option selected>Buôn mê thuột - Gia lai - Kontum</option>
+                </optgroup>
+
+                <optgroup label="Miền Nam">
+                    <option>TP.HCM - Cần Thơ - Cà Mau</option>
+                    <option>TP.HCM - Mỹ Tho</option>
+                </optgroup>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Phương tiện</td>
+        <td>
+            <input type="radio" name="phuongTien"
+                   id="mayBay" value="Máy bay">
+            Máy bay
+
+            <input type="radio" name="phuongTien"
+                   id="xeOto" value="Xe ô tô" checked>
+            Xe ô tô
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            Số lượng đoàn khách
+        </td>
+
+        <td>
+            <fieldset>
+                <legend>Số lượng đoàn khách</legend>
+
+                Người lớn
+                <input type="text" id="nguoiLon" size="5">
+
+                Trẻ em
+                <input type="text" id="treEm" size="5">
+
+            </fieldset>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Ghi chú thêm</td>
+        <td>
+            <textarea id="ghiChu" rows="3" cols="40"></textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="button"
+                   id="dongY"
+                   value="Đồng ý"
+                   onclick="hienThi()">
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <div id="nhan"></div>
+        </td>
+    </tr>
+
+</table>
+
+</form>
+
+<script>
+function hienThi() {
+    document.getElementById("nhan").innerText =
+        "Bạn đã đăng ký thành công!!!";
+}
+</script>
+
+</body>
+</html> 
